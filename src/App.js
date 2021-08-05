@@ -1,6 +1,7 @@
 import './App.css';
 import { useEffect } from 'react';
 import productApi from './api/productApi.js';
+import ListPage from './features/Todo/pages/ListPage';
 
 function App() {
   useEffect(function () {
@@ -22,6 +23,9 @@ function App() {
   return (
     <div className="App">
       <h1>API MODULE</h1>
+
+      <h1>ToDo</h1>
+      <ListPage />
     </div>
   );
 }
